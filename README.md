@@ -129,3 +129,5 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+https://www.istockphoto.com/se/foto/abstract-color-splash-rainbow-gm512401868-87142329
