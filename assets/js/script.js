@@ -78,35 +78,35 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'What color do you mix to get orange?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'yellow + red', correct: true },
+      { text: 'blue + yellow', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'What color do you mix to get purple?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'blue + red', correct: true },
+      { text: 'red + blue', correct: true },
+      { text: 'yellow + blue', correct: false },
+      { text: 'blue + white', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'What color do you mix to get green?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'yellow + red', correct: false },
+      { text: 'yellow + blue', correct: true },
+      { text: 'blue + red', correct: false },
+      { text: 'white + orange', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'What color do you need to mix for codeinstitute color?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'yeallow + blue', correct: false },
+      { text: 'red + yellow', correct: true }
     ]
   }
 ]
