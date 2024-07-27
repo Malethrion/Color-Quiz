@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded;
+    font-family:'Courier New', Courier, monospace;
   }
   
   :root {
@@ -21,6 +21,18 @@
     background-color: hsl(var(--hue), 100%, 20%);
   }
   
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: auto;
+}
+
+.logo {
+    height: 40px;
+    padding-right: 5px;
+}
+
+
   body.correct {
     --hue: var(--hue-correct);
   }
