@@ -80,33 +80,33 @@ const questions = [
   {
     question: 'What color do you mix to get orange?',
     answers: [
-      { text: 'yellow + red', correct: true },
-      { text: 'blue + yellow', correct: false }
+    { text: 'yellow + red', correct: true },
+    { text: 'blue + yellow', correct: false }
     ]
   },
   {
     question: 'What color do you mix to get purple?',
     answers: [
-      { text: 'blue + red', correct: true },
-      { text: 'red + blue', correct: true },
-      { text: 'yellow + blue', correct: false },
-      { text: 'blue + white', correct: false }
+    { text: 'blue + red', correct: true },
+    { text: 'red + blue', correct: true },
+    { text: 'yellow + blue', correct: false },
+    { text: 'blue + white', correct: false }
     ]
   },
   {
     question: 'What color do you mix to get green?',
     answers: [
-      { text: 'yellow + red', correct: false },
-      { text: 'yellow + blue', correct: true },
-      { text: 'blue + red', correct: false },
-      { text: 'white + orange', correct: false }
+    { text: 'yellow + red', correct: false },
+    { text: 'yellow + blue', correct: true },
+    { text: 'blue + red', correct: false },
+    { text: 'white + orange', correct: false }
     ]
   },
   {
     question: 'What color do you need to mix for Code Institute "O" logo color?',
     answers: [
-      { text: 'yellow + blue', correct: false },
-      { text: 'red + yellow', correct: true }
+    { text: 'yellow + blue', correct: false },
+    { text: 'red + yellow', correct: true }
     ]
   }
 ]
