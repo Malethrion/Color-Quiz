@@ -56,7 +56,7 @@ function selectAnswer(e) {
   })
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
-  } else {
+    } else {
     startButton.innerText = 'Restart'
     startButton.classList.remove('hide')
   }
@@ -66,7 +66,7 @@ function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
-  } else {
+    } else {
     element.classList.add('wrong')
   }
 }
@@ -103,9 +103,9 @@ const questions = [
     ]
   },
   {
-    question: 'What color do you need to mix for codeinstitute color?',
+    question: 'What color do you need to mix for Code Institute "O" logo color?',
     answers: [
-      { text: 'yeallow + blue', correct: false },
+      { text: 'yellow + blue', correct: false },
       { text: 'red + yellow', correct: true }
     ]
   }
