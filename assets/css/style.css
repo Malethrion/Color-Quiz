@@ -103,6 +103,7 @@ body.wrong {
 
 .btn.correct {
   background-color: green;
+  color: white;
 }
 
 .btn.wrong {
