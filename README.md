@@ -107,8 +107,22 @@ Alternatively, you can right-click the index.html file and select "Open with" fo
 
 
 
-### Live Deployment
-This project can be hosted on GitHub Pages or any other static site hosting service.
+## Live Deployment
+
+### Github Preparation
+It is possible to copy or clone the repository for direct deployment, make sure the SCSS compiles correctly first.
+Requirements:
+- A free GitHub account.
+### Github Instructions
+- Log in to your GitHub account. navigate to https://github.com/Malethrion/Color-Quiz.git.
+- You can set up your own repository and copy or clone it, or you fork the repository.
+- git add, git commit and git push to a GitHub repository, if necessary.
+- GitHub pages will update from the master branch by default.
+- Go to the Settings page of the repository.
+- Scroll down to the Github Pages section.
+- Select the Master Branch for source.
+- Confirm the selection.
+- It should be available in a couple of minutes.
 
 ## Credits
 
