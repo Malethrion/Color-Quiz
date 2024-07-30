@@ -67,6 +67,7 @@ body.correct {
 
 body.wrong {
   background-color: red;
+  color: white;
 }
 
 .container {
