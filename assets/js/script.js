@@ -3,9 +3,13 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const timerElement = document.getElementById('timer')
+const scoreElement = document.getElementById('score')
 
 let shuffledQuestions, currentQuestionIndex
 let time = 60
+let score = 0
+let timer
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -15,11 +19,33 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
-  countdown()
+  score = 0
+  time = 60
+  updateScore()
+  startTimer()
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
+}
+
+function startTimer() {
+  timer = setInterval(() => {
+    time--
+    updateTimer()
+    if (time <= 0) {
+      clearInterval(timer)
+      endGame()
+    }
+  }, 1000)
+}
+
+function updateTimer() {
+  timerElement.innerText = `Time: ${time}`
+}
+
+function updateScore() {
+  scoreElement.innerText = `Score: ${score}`
 }
 
 function setNextQuestion() {
@@ -51,16 +77,20 @@ function resetState() {
 
 function selectAnswer(e) {
   const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
+  const correct = selectedButton.dataset.correct === "true"
   setStatusClass(document.body, correct)
   Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
+    setStatusClass(button, button.dataset.correct === "true")
   })
+  if (correct) {
+    score++
+    updateScore()
+  }
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
-    } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
+  } else {
+    clearInterval(timer)
+    showFinalScore()
   }
 }
 
@@ -68,7 +98,7 @@ function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
-    } else {
+  } else {
     element.classList.add('wrong')
   }
 }
@@ -78,44 +108,86 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
-function countdown() {
-  const timer = setInterval(() => {
-    time-- 
-    console.log(time)
-  }, 1000);
+function endGame() {
+  questionContainerElement.classList.add('hide')
+  showFinalScore()
+  startButton.innerText = 'Restart'
+  startButton.classList.remove('hide')
+}
+
+function showFinalScore() {
+  questionElement.innerText = `Congratulations! You scored ${score} point${score !== 1 ? 's' : ''}.`
+  questionContainerElement.classList.remove('hide')
+  answerButtonsElement.innerHTML = `<button class="btn" onclick="startGame()">Play Again</button>`
 }
 
 const questions = [
   {
     question: 'What color do you mix to get orange?',
     answers: [
-    { text: 'yellow + red', correct: true },
-    { text: 'blue + yellow', correct: false }
+      { text: 'yellow + red', correct: true },
+      { text: 'blue + yellow', correct: false }
     ]
   },
   {
-    question: 'What color do you mix to get purple?',
+    question: 'What color do you mix to get violet?',
     answers: [
-    { text: 'blue + red', correct: true },
-    { text: 'red + blue', correct: true },
-    { text: 'yellow + blue', correct: false },
-    { text: 'blue + white', correct: false }
+      { text: 'blue + red', correct: true },
+      { text: 'red + blue', correct: true },
+      { text: 'yellow + blue', correct: false },
+      { text: 'blue + white', correct: false }
     ]
   },
   {
     question: 'What color do you mix to get green?',
     answers: [
-    { text: 'yellow + red', correct: false },
-    { text: 'yellow + blue', correct: true },
-    { text: 'blue + red', correct: false },
-    { text: 'white + orange', correct: false }
+      { text: 'yellow + red', correct: false },
+      { text: 'yellow + blue', correct: true },
+      { text: 'blue + red', correct: false },
+      { text: 'white + orange', correct: false }
+    ]
+  },
+  {
+    question: 'What color do you mix to get pink?',
+    answers: [
+      { text: 'blue + red', correct: false },
+      { text: 'yellow + red', correct: false },
+      { text: 'blue + white', correct: false },
+      { text: 'white + red', correct: true }
+    ]
+  },
+  {
+    question: 'What color do you mix to get brown?',
+    answers: [
+      { text: 'violet + red', correct: false },
+      { text: 'black + red', correct: true },
+      { text: 'green + red', correct: true },
+      { text: 'yellow + orange', correct: false }
+    ]
+  },
+  {
+    question: 'What color do you mix to get grey?',
+    answers: [
+      { text: 'yellow + black', correct: false },
+      { text: 'white + blue', correct: false },
+      { text: 'blue + black', correct: false },
+      { text: 'white + black', correct: true }
+    ]
+  },
+  {
+    question: 'What color do you mix to get Ultra?',
+    answers: [
+      { text: 'blue + red', correct: false },
+      { text: 'yellow + blue', correct: false },
+      { text: 'blue + violet', correct: true },
+      { text: 'blue + black', correct: false }
     ]
   },
   {
     question: 'What color do you need to mix for Code Institute "O" logo color?',
     answers: [
-    { text: 'yellow + blue', correct: false },
-    { text: 'red + yellow', correct: true }
+      { text: 'yellow + blue', correct: false },
+      { text: 'red + yellow', correct: true }
     ]
   }
 ]
