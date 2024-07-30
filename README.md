@@ -78,8 +78,34 @@ Tested on multiple browsers:
 
 ### Local Deployment
 To deploy this project locally:
-1. Clone the repository: `git clone <repository-url>`
-2. Open `index.html` in your web browser.
+1. Clone the Repository:
+
+Open your terminal (command prompt or Git Bash).
+
+Navigate to the directory where you want to clone the repository.
+
+Run the following command to clone the repository:
+
+git clone https://github.com/Malethrion/Color-Quiz.git
+
+2. Navigate to the Project Directory:
+
+Change your directory to the project folder by running:
+
+cd Color-Quiz
+
+3. Open the Project in Your Code Editor:
+
+You can open the project in your preferred code editor (e.g., Visual Studio Code) by running:
+
+code .
+
+4. Open index.html in Your Web Browser:
+
+You can directly open the index.html file in your web browser by double-clicking on the file in your file explorer.
+Alternatively, you can right-click the index.html file and select "Open with" followed by your preferred web browser.
+
+
 
 ### Live Deployment
 This project can be hosted on GitHub Pages or any other static site hosting service.
@@ -91,10 +117,12 @@ This project can be hosted on GitHub Pages or any other static site hosting serv
 
 ### Media
 - Logo image from:
+
 https://www.freepik.com/free-photos-vectors/color-splash/3#uuid=b5e19183-3980-46e1-bde8-51afb8f5e160
 
 ### Acknowledgements
 - Inspiration and guidance from "Build a Quiz App with JavaScript" by Web Dev Simplified:
+
 https://www.youtube.com/watch?v=riDzcEQbX6k
 https://www.youtube.com/@WebDevSimplified
 
