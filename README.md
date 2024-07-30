@@ -100,7 +100,6 @@ https://www.youtube.com/@WebDevSimplified
 
 - Also got some inspiration from Love Maths in the "Love Maths - Essential Project".
 
+### Further info about commits
+- I am well aware that I have several number of too long commits with far too long messaging. I have been having a tight schedule with work and had less time than preferable on this project. This caused me to put alot of consentrated time and effort into the project, resulting in me making commits more seldom. Writing long messages not to miss anything committed while also having big changes at a time. As you can see in my later commits this has changed completely and I have adjusted to properly. My humble apologies!
 
-
-
-IMG link
