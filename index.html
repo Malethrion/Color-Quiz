@@ -7,6 +7,7 @@
     <title>Color Quiz</title>
 </head>
 <body>
+    <!-- Introductory section -->
     <section class="header-container" id="intro">
         <h1 class="heading">
             <img class="logo" src="assets/images/logo.jpg" alt="logo"> Color Quiz
@@ -17,9 +18,17 @@
             Then press the button to play again!
         </h3>
     </section>
+    
+    <!-- Main quiz container -->
     <div class="container">
+
+        <!-- Timer display -->
         <div id="timer" class="timer">Time: 60</div>
+
+        <!-- Score display -->
         <div id="score" class="score">Score: 0</div>
+
+        <!-- Question container, hidden initially -->
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
@@ -29,6 +38,8 @@
                 <button class="btn">Answer 4</button>
             </div>
         </div>
+
+        <!-- Control buttons -->
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
