@@ -16,7 +16,7 @@ Welcome to the Color Quiz, an interactive and fun (and most exciting!) quiz that
 ### Design
 
 #### Color Scheme
-The color scheme is vibrant and engaging, with a purple background and contrasting button colors to indicate correct and incorrect answers.
+The color scheme is vibrant and engaging, with a purple background(I like purple.) and contrasting button colors to indicate correct and incorrect answers.
 
 #### Typography
 The site uses the 'Courier New' font for a consistent and readable experience.
