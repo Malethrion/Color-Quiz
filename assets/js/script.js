@@ -20,6 +20,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
+  introElement.classList.add('hide')
   score = 0
   time = 60
   updateScore()
