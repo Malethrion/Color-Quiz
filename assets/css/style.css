@@ -138,6 +138,7 @@ body.wrong {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 @media(min-width: 600px) {
