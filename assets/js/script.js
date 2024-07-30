@@ -5,6 +5,7 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const timerElement = document.getElementById('timer')
 const scoreElement = document.getElementById('score')
+const introElement = document.getElementById('intro')
 
 let shuffledQuestions, currentQuestionIndex
 let time = 60
