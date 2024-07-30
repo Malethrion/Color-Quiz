@@ -111,10 +111,12 @@ body.wrong {
   outline: none;
 }
 
+/* Button hover effect */
 .btn:hover {
   border-color: black;
 }
 
+/* Correct and wrong answer button styling */
 .btn.correct {
   background-color: green;
   color: white;
@@ -125,12 +127,14 @@ body.wrong {
   color: white;
 }
 
+/* Start and Next button styling */
 .start-btn, .next-btn {
   font-size: 1rem;
   font-weight: bold;
   padding: 15px 20px;
 }
 
+/* Responsive styling for Start and Next buttons on larger screens */
 @media(min-width: 600px) {
   .start-btn, .next-btn {
       font-size: 1.5rem;
@@ -138,6 +142,7 @@ body.wrong {
   }
 }
 
+/* Controls container styling */
 .controls {
   display: flex;
   justify-content: center;
@@ -145,16 +150,19 @@ body.wrong {
   flex-direction: column;
 }
 
+/* Hide class to hide elements */
 .hide {
   display: none;
 }
 
+/* Timer and Score styling */
 .timer, .score {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
+/* Responsive styling for Timer and Score on larger screens */
 @media(min-width: 600px) {
   .timer, .score {
       font-size: 1.5rem;
