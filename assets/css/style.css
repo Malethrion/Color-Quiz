@@ -18,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: purple;
+  flex-direction: column;
 }
 
 .header-container {
