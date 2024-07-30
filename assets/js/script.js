@@ -26,6 +26,7 @@ function startGame() {
   startButton.classList.add('hide')
   introElement.classList.add('hide')
   timerElement.classList.remove('hide')
+  scoreElement.classList.remove('hide')
   score = 0
   time = 60
   updateScore()
