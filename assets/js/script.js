@@ -112,6 +112,7 @@ function clearStatusClass(element) {
 
 function endGame() {
   questionContainerElement.classList.add('hide')
+  nextButton.classList.add('hide')
   showFinalScore()
   startButton.innerText = 'Restart'
   startButton.classList.remove('hide')
