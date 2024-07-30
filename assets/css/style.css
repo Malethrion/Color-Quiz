@@ -1,14 +1,18 @@
+/* Apply box-sizing border-box and set default font */
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Define color variables */
 :root {
   --hue-neutral: 200;
   --hue-wrong: 0;
   --hue-correct: 145;
 }
 
+
+/* General body styling */
 body {
   padding: 0;
   margin: 0;
@@ -22,12 +26,15 @@ body {
   color: white;
 }
 
+
+/* Header container styling */
 .header-container {
   text-align: center;
   margin-bottom: 20px;
   padding: 0 20px;
 }
 
+/* Heading styling */
 .heading {
   font-size: 2rem;
   display: flex;
@@ -36,16 +43,19 @@ body {
   color: white;
 }
 
+/* Logo image styling */
 .logo {
   height: 80px;
   margin-bottom: 10px;
 }
 
+/* Subheading styling */
 h2, h3 {
   font-size: 1.2rem;
   margin: 10px 0;
 }
 
+/* Responsive styling for larger screens */
 @media(min-width: 600px) {
   .heading {
       font-size: 2.5rem;
@@ -60,6 +70,7 @@ h2, h3 {
   }
 }
 
+/* Background color for correct and wrong answers */
 body.correct {
   background-color: green;
   color: white;
@@ -70,6 +81,7 @@ body.wrong {
   color: white;
 }
 
+/* Main container styling */
 .container {
   width: 90%;
   max-width: 800px;
@@ -80,6 +92,7 @@ body.wrong {
   color: black;
 }
 
+/* Button grid styling */
 .btn-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -87,6 +100,7 @@ body.wrong {
   margin: 20px 0;
 }
 
+/* General button styling */
 .btn {
   --hue: var(--hue-neutral);
   border: 1px solid hsl(var(--hue), 100%, 30%);
