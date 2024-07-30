@@ -29,7 +29,7 @@ The logo image enhances the visual appeal and reinforces the quiz theme.
 ### Existing Features
 - **Start Quiz Button**: Allows users to start the quiz and initiate the timer.
 - **Next Question Button**: Allows users to move to the next question.
-- **Questions and Answers**: Presents a series of questions with multiple-choice answers.
+- **Questions and Answers**: Presents a series of questions with multiple-choice answers. The code is written so you can almost add an infite number of questions without worrying about further coding except adding questions in  the code.
 - **Timer**: Displays the remaining time for the quiz.
 - **Score Display**: Shows the current score during the quiz.
 - **Feedback on Answers**: Changes the background color to green or red based on whether the answer is correct or incorrect.
