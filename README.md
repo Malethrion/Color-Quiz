@@ -58,12 +58,13 @@ The logo image enhances the visual appeal and reinforces the quiz theme.
  - No essential errors were returned when passing through the official (https://jshint.com/)
  However I got 25 errors related to " ES6 (use 'esversion: 6') " as you can see bellow:
  ![error](https://raw.githubusercontent.com/Malethrion/Color-Quiz/main/assets/images/jshinterrors.png)
-### Functionality Testing)
+
 ### Functionality Testing
 - Verified that the start button initializes the quiz and timer.
 - Ensured that selecting an answer updates the score and provides feedback.
 - Checked that the next button advances to the next question.
 - Confirmed that the final score is displayed correctly at the end of the quiz.
+[![Watch the video]()
 
 ### Responsiveness Testing
 The website was tested on various devices to ensure responsiveness:
