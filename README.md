@@ -49,6 +49,15 @@ The logo image enhances the visual appeal and reinforces the quiz theme.
 
 ## Testing
 
+## Validator Testing
+- HTML
+ - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmalethrion.github.io%2FColor-Quiz%2F)
+- CSS
+ - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmalethrion.github.io%2FColor-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+- JS
+ - No essential errors were returned when passing through the official (https://jshint.com/)
+ However I got 25 errors related to " ES6 (use 'esversion: 6') " as you can see bellow:
+ ![error]
 ### Functionality Testing
 - Verified that the start button initializes the quiz and timer.
 - Ensured that selecting an answer updates the score and provides feedback.
