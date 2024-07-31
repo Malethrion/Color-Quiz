@@ -75,9 +75,13 @@ The website was tested on various devices to ensure responsiveness:
 ### Compatibility Testing
 Tested on multiple browsers:
 - Chrome
+![web test](https://raw.githubusercontent.com/Malethrion/Color-Quiz/main/assets/images/chrome.png)
 - Firefox
+![web test](https://raw.githubusercontent.com/Malethrion/Color-Quiz/main/assets/images/firefox.png)
 - Safari
+![web test](https://raw.githubusercontent.com/Malethrion/Color-Quiz/main/assets/images/safari.png)
 - Edge
+![web test](https://raw.githubusercontent.com/Malethrion/Color-Quiz/main/assets/images/edge.png)
 
 ### Bugs Found and Fixed
 - **Issue**: Timer did not stop at zero.
