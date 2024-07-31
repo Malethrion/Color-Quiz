@@ -64,7 +64,7 @@ The logo image enhances the visual appeal and reinforces the quiz theme.
 - Ensured that selecting an answer updates the score and provides feedback.
 - Checked that the next button advances to the next question.
 - Confirmed that the final score is displayed correctly at the end of the quiz.
-[![Watch the video]()
+![Watch the video](https://youtube.com/shorts/0RyjYpaHMNw)
 
 ### Responsiveness Testing
 The website was tested on various devices to ensure responsiveness:
